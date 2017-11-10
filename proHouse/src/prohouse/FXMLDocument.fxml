@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="235.0" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="prohouse.FXMLDocumentController">
+    <children>
+        <Button fx:id="salvarControlador" layoutX="249.0" layoutY="176.0" onAction="#handleButtonAction" text="Salvar" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="176.0">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="30.0" layoutY="45.0" text="Nome do equipamento" textFill="#9d9c9c" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="30.0" layoutY="71.0" prefHeight="25.0" prefWidth="267.0" AnchorPane.bottomAnchor="139.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="112.0" text="IP" textFill="#9d9c9c" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="279.0" AnchorPane.topAnchor="112.0">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="30.0" layoutY="135.0" prefHeight="25.0" prefWidth="267.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
