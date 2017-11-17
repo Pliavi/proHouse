@@ -5,26 +5,35 @@
  */
 package prohouse;
 
+import classes.controleEquipamento;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  *
  * @author a1502549
  */
-public class FXMLDocumentController implements Initializable {
+public class FXMLDocumentControllerCadastrar implements Initializable {
     
     @FXML
     private Label label;
     
     @FXML
+    private TextField nome;
+    
+    @FXML
+    private TextField ip;
+    
+    @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        controleEquipamento CE = new controleEquipamento();
+        CE.setNome(nome.toString());
+        CE.setIp(ip.toString());
     }
     
     @Override
