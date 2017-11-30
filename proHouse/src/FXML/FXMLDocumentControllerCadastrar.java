@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prohouse;
+package FXML;
 
 import classes.controleEquipamento;
 import java.net.URL;
@@ -30,8 +30,9 @@ public class FXMLDocumentControllerCadastrar implements Initializable {
     private TextField ip;
     
     @FXML
+    controleEquipamento CE = new controleEquipamento();
+    
     private void handleButtonAction(ActionEvent event) {
-        controleEquipamento CE = new controleEquipamento();
         CE.setNome(nome.toString());
         CE.setIp(ip.toString());
     }
