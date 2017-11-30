@@ -17,6 +17,7 @@ import javafx.scene.control.TextField;
  * @author a1502549
  */
 public class FXMLDocumentControllerListar {
+
     @FXML
     private Label label;
 
@@ -29,7 +30,9 @@ public class FXMLDocumentControllerListar {
     controleEquipamento CE = new controleEquipamento();
 
     public void initialize(URL url, ResourceBundle rb) {
-        CE.getNome();
-        CE.getIp();
+        do {
+            CE.getNome();
+            CE.getIp();
+        } while (CE.id >= 0);
     }
 }
